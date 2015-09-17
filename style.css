@@ -1,0 +1,62 @@
+/*.Car {
+	position:absolute;
+	width: 100px;
+	height: 50px;
+	background-color: black;
+}
+
+.CopCar {
+	position:absolute;
+	width: 100px;
+	height: 50px;
+	background-color: blue;
+}
+
+.motorcycle {
+	position:absolute;
+	width: 100px;
+	height: 50px;
+	background-color: yellow;
+}
+
+.tank {
+	position:absolute;
+	width: 100px;
+	height: 50px;
+	background-color: brown;
+}*/
+
+.Vehicle {
+ position: absolute;
+ height: 100px;
+ width: 100px;
+ background-color: yellow;
+}
+
+.Car {
+ position: absolute;
+ height: 100px;
+ width: 100px;
+ background-color: black;
+}
+
+.CopCar {
+ position: absolute;
+ height: 100px;
+ width: 100px;
+ background-color: blue;
+}
+
+.Motorcycle {
+ position: absolute;
+ height: 50px;
+ width: 50px;
+ background-color: yellow;
+}
+
+.Tank {
+ position: absolute;
+ height: 150px;
+ width: 150px;
+ background-color: green;
+}
