@@ -35,7 +35,7 @@
 
 .Car {
  position: absolute;
- height: 100px;
+ height: 50px;
  width: 100px;
  background-color: black;
 }
@@ -43,20 +43,20 @@
 .CopCar {
  position: absolute;
  height: 100px;
- width: 100px;
+ width: 50px;
  background-color: blue;
 }
 
 .Motorcycle {
  position: absolute;
  height: 50px;
- width: 50px;
+ width: 10px;
  background-color: yellow;
 }
 
 .Tank {
  position: absolute;
- height: 150px;
+ height: 100px;
  width: 150px;
  background-color: green;
 }
