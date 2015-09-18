@@ -1,11 +1,11 @@
-/* global cy */
+
 $(document).ready(function() {
    var width = $(document).width();
    var height = $(document).height();
    var vid = 0;
 
    $('#btnAddCopCar').click(function() {
-       var div = $('<div class="CopCar"></div>').attr('id', 'v'+ vid);
+       var div = $('<div class="CopCar" id="divtoblink"></div>').attr('id', 'v'+ vid);
        $(document.body).append(div);
        var v = new CopCar('#v'+vid);
        function randomSpawnPoint(){
@@ -16,6 +16,10 @@ $(document).ready(function() {
                 "top":y + "px",  
             })
             }
+       function anm(element) {
+           $(element).delay(150).animate({ opacity: 'toggle' }, 10, function() { anm(element); });
+        }
+       anm($('#v' +vid));
        randomSpawnPoint();
        v.move();
        vid++
@@ -43,9 +47,6 @@ $(document).ready(function() {
        var div = $('<div class="Motorcycle"></div>').attr('id', 'v'+ vid);
        $(document.body).append(div);
        var m = new Motorcycle('#v'+vid);
-       function collisionDamage(){
-
-       }
        function randomSpawnPoint(){
             var x = Math.floor((Math.random() * width) + 1);
             var y = Math.floor((Math.random() * height) + 1);
@@ -54,7 +55,7 @@ $(document).ready(function() {
                 "top":y + "px",  
             })
             }
-       collisionDamage();
+            
        randomSpawnPoint();       
        m.move();
        vid++;
@@ -116,7 +117,7 @@ $(document).ready(function() {
            }
        );
    }
-   Vehicle.prototype.move = function (direction) {
+   Vehicle.prototype.move = function () {
        this.moveRight();
        this.moveDown();
    }
